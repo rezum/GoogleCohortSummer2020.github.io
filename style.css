@@ -1,0 +1,47 @@
+h2{
+	color:plum;
+	font-family: 'Notable', sans-serif;
+  font-size: 50px;
+}
+
+h1{
+   color:lightcoral;
+   font-size: 30px;
+   font-family: 'Fantasy', fantasy
+}
+
+p{
+	font-size: 20px;
+	color: cadetblue;
+	font-family: 'Notable', sans-serif;
+
+}
+.google{
+	font-size: 20px;
+	color: powderblue;
+	font-family: 'Notable', sans-serif;
+
+
+}
+
+.nav{
+  list-style-type: none;
+  background-color: rgb(249, 251, 152);
+  margin: -10px;
+	  display: flex;
+
+  flex-direction: row;
+  align-items: center;	
+}
+
+li a{
+	display:inline;
+	color: orange;
+	font-family: 'Notable', sans-serif;	
+  font-size: 30px;
+  text-align: center;
+  margin: 10px 20px;
+}
+
+
+
