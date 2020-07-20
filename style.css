@@ -1,4 +1,6 @@
-
+head{
+	margin: 15px;
+}
 
 h1{
    color:#3036c6;
@@ -7,14 +9,23 @@ font-family: 'Montserrat Subrayada', sans-serif;
 text-align: center;
 }
 
+h4{
+  text-align: center;
+}
+
 p{
 	font-size: 20px;
 	color: cadetblue;
 	font-family: 'Source Sans Pro', sans-serif;
 
 }
+.description{
+  color: #a0615f;
+}
 body{
 	background-color: #d4f3f5;
+		margin: 15px;
+
 }
 
 .nav{
@@ -22,9 +33,11 @@ body{
   background-color: #fbe8a6;
   margin: -10px;
 	  display: flex;
-justify-content: flex-end;
+justify-content: space-around;
   flex-direction: row;
-  align-items: center;	
+  align-items: center;
+padding-top: 10px;
+padding-bottom: 10px;
 }
 .nav a:hover {
   color: #c76f46;
@@ -35,7 +48,8 @@ li a{
 	font-family: 'Source Sans Pro', sans-serif;
   font-size: 30px;
   text-align: center;
-  margin: 10px 20px;
+  margin: 20px 20px;
+
 }
 #textInAboutUs{
   font-size: 30px;
@@ -53,11 +67,12 @@ li a{
   clear: both;
 }
 
-a.link{
-  font-size: 15px;
-	color: rgb(20, 7, 207);
+.link{
+  font-size: 20px;
   text-align: left;
+  color: cadetblue;
   margin: 0%;
+  font-family: "Times New Roman", Times, serif;
 }
 
 
@@ -106,3 +121,183 @@ a.link{
   color: white;
   transform: rotateY(180deg);
 }
+
+/* CSS for About Us Page Modal */
+/* The Modal (background) */
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-body {padding: 2px 16px;}
+
+#headshot{
+  max-width: 28%;
+  max-height: 28%;
+}
+
+#headshots{
+  max-width: 40%;
+  max-height: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.columnTwo {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.rowTwo:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.img{
+	align-items: center;
+	height: 300px;
+	width:auto;
+}
+
+#development{
+	text-align: center;
+		font-size: 25px;
+		color: cadetblue;
+	font-family: 'Source Sans Pro', sans-serif;
+
+}
+#aboutUsbutton{
+width: 200px;
+height: 50px;
+margin-left: 105px;
+}
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}

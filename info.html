@@ -5,9 +5,10 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
+    <title>Information</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
-	<h1>Homepage</h1>
+	<img src="ofa.png" style="width:100%;height:100%">
+  <h1>Information</h1>
 
 <ul class="nav">
 	<li><a href="index.html">Homepage</a></li>
@@ -18,7 +19,387 @@
 </ul>  
 
   </head> 
+<style>
+	  head{
+	margin: 15px;
+}
 
+h1{
+   color:#3036c6;
+   font-size: 50px;
+font-family: 'Montserrat Subrayada', sans-serif;
+text-align: center;
+}
+
+h4{
+		font-family: 'Source Sans Pro', sans-serif;
+
+  text-align: center;
+}
+ 
+h2{
+  font-size: 40px;
+		font-family: 'Source Sans Pro', sans-serif;
+
+  }
+
+h3{
+  font-size: 25px;
+		font-family: 'Source Sans Pro', sans-serif;
+
+  }
+
+h5 {
+  font-size: 17px;
+  color: #f4976c;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+p{
+	font-size: 20px;
+	color: cadetblue;
+	font-family: 'Source Sans Pro', sans-serif;
+
+}
+body{
+	background-color: #d4f3f5;
+		margin: 15px;
+
+}
+
+.nav{
+  list-style-type: none;
+  background-color: #fbe8a6;
+  margin: -10px;
+	  display: flex;
+justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+.nav a:hover {
+  color: #c76f46;
+}
+li a{
+	display:inline;
+	color: #f4976c;
+	font-family: 'Source Sans Pro', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  margin: 20px 20px;
+
+}
+#textInAboutUs{
+  font-size: 30px;
+}
+.column {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.link{
+  font-size: 20px;
+  text-align: left;
+  color: cadetblue;
+  margin: 0%;
+  font-family: "Times New Roman", Times, serif;
+}
+
+
+/*FLIP CARD FOR THE ABOUT PAGE from LINE 63 TO LINE 106*/
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* CSS for About Us Page Modal */
+/* The Modal (background) */
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-body {padding: 2px 16px;}
+
+#headshot{
+  max-width: 28%;
+  max-height: 28%;
+}
+
+#headshots{
+  max-width: 40%;
+  max-height: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.columnTwo {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.rowTwo:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+.map{
+	height: 400px;
+}
+.img{
+	align-items: center;
+	height: 300px;
+	width:auto;
+}
+.gap{
+	align-items: center;
+	text-align:center;
+}
+#development{
+	text-align: center;
+		font-size: 25px;
+		color: cadetblue;
+	font-family: 'Source Sans Pro', sans-serif;
+
+}
+#aboutUsbutton{
+width: 200px;
+height: 50px;
+margin-left: 105px;
+}
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+
+#socialjustice {
+  font-size:45px;
+  color: #f4976c;
+}
+
+#redliningimg {
+  align-items: center;
+	height: 400px;
+	width: auto;
+}
+  #statement {
+    text-align: center;
+    font-weight: bold;
+  }
+	</style>
  <body>
-  </body>
+	 <h4 id='socialjustice'>Social Justice Issues</h4>
+    <p id='statement'> The social justice issues that we’ve discussed in this cohort include affordable healthcare, the housing crisis, veteran homelessness, redlining, and gender equality in CS. Below, we explain what has been done in an attempt to improve these issues, the current state of these issues during the COVID-19 pandemic, and some of Google’s approaches to these problems. </p>
+
+    <h2> Affordable Healthcare </h2>
+    <p> With the current COVID-19 pandemic, concerns arise over the increasing rates of infection and the curve nowhere close to flattening. Within San Francisco, people in the SF Mission district are disproportionately affected by the pandemic because the community consists of many frontline workers and is densely populated. Many public health workers and low-income workers are unable to work from home. As their job consists of essential frontline work, these workers are at a much larger risk for contracting the virus than others. According to Diane Havlir, MD, chief of the UCSF Division of HIV, more recent infections were concentrated among low-income Latinx people working frontline jobs, whereas infections earlier in the pandemic affected people more equally across the ethnic and economic spectrum. </p>
+      
+    <p> Also, expensive hospital and medical fees in the US have always been a huge issue for patients. Without insurance, patients carry a heavy financial burden with every hospital bill they receive. With the ongoing pandemic, hospital bills could cost up to $1.1 million for six weeks in the ICU and one-month usage of ventilators. CNBC reports that the average hospital treatment cost for a patient with coronavirus is $30,000. The hefty price tag of COVID-19 treatment is one of the big fears that come with getting affected by the coronavirus. Even hospitals are losing large amounts of money due to costs to care for COVID-19 patients, according to the SF Chronicle. </p>
+      
+    <p> What is being done about this issue? Frontline workers are essential to our society, so this problem will be ongoing unless COVID-19 rates drop drastically. Regulations or better preventative measures on how people can better isolate or protect themselves could make a difference. Fortunately, SF’s early shelter-in-place order helped prevent an overwhelming surge of hospitalizations and deaths. As reported by UCSF, UCSF and Latino Task Force are working together in providing low-barrier universal testing in the Mission. The City and County of San Francisco partnered with Unidos En Salud to offer free PCR and antibody testing to all residents and workers in the Mission District. </p>
+      
+    <p> Additionally, Google is putting several efforts into spreading awareness about and tracking COVID-19. Google partnered with Apple to develop a coronavirus tracking system for contact-tracing. It was first developed as an app and will later be built-in into iOS and Android API systems. There is also a dashboard of COVID-19 health information, resources, prevention tips, and data on Google. As stated on their social impact website, Google is also spending $100M to support solutions, humanitarian relief, and long term recovery to battle the disease. </p>
+
+    <h2> Housing Crisis </h2>
+    <p> Due to the impact of COVID-19, there has been more exposure to the problems already seen in San Francisco. The housing crisis is one evident issue during this time. With the high number of people unemployed due to the coronavirus, according to the Los Angeles Times, paying rent is a huge concern. Some landlords told their tenants they don’t need to pay rent. This gives some relief on the burden of tenants so tenants can put money towards other necessities. Google has helped before and during this time, as Google contributed $1 billion to fight the housing crisis in 2019. According to PND by Candid, in 2020 they have made pledges to invest $1 billion again to help the housing crisis. COVID-19 has also caused concerns on the homeless community because of how many they are at shelters and encampments. According to Mercury News, public health workers are helping by setting up toilets and handwashing stations at encampments.</p> 
+    <p> Overcrowding in homeless shelters has also been a problem, but some hotels have opened their doors to provide shelter. Google has committed $50 million to address homelessness in 2019. Nationally, there is a shortage of more than 7 million affordable homes for over 11 million extremely low-income families. There is no state or county where a renter working full-time at minimum wage can afford a two-bedroom apartment. In California, wages have remained stagnant year after year, while rents have increased astronomically.</p>
+    
+    <h2> Veteran Homelessness </h2>
+    <p> Veteran homelessness has been a problem of which many organizations and programs have been trying to resolve. For example, Bay Area organization All The Way Home has housed over 1,602 veterans over since the 2015 Veterans Day. Many other organizations and programs have helped before and during this time. According to a post by the University of San Francisco, in San Francisco, there were 15.5% homeless veterans in the year 2011. In the year 2017, it decreased to 5.9%. This number is fewer than 140 individuals. These are some improvements.</p> 
+    <p> Due to COVID-19, there were concerns for unsheltered veterans because they are at a large risk of being exposed to the virus. The majority of veterans are seniors, disabled, and have extremely-low income. This situation led to an increase in support and assistance for veterans to ensure they have shelter. According to Globe News Wire, Craig Newmark is one of the people during this time that has donated $150,000 to Swords to Plowshares, a program that provides counseling, rapid re-housing, eviction prevention services, employment, training, and more. Additionally, other veteran programs and organizations are also providing relief efforts. </p>
+    
+    <h2> Redlining and Race </h2>
+    <h3>  Background/Origin </h3>
+    <p> Redlining has been an issue since the start of America as a capitalist country. Races and ethnicities have been separated into ghettos and impoverished neighborhoods since they arrived during the early immigration periods in the 1900s. African Americans weren't allowed to establish a wealthy community. When slavery was abolished, there were still limitations held against them, especially when Southern leaders were allowed back into government positions. This caused an early form of redlining when shop owners would refuse services and sale of goods to any folks of color, eventually spreading to other Europeans when a mass wave of Irish immigrated to the US.</p> 
+    <p> In a modern sense, redlining became most prevalent in the 1930s and onwards. Redlining is when major banks, insurance companies, and other massive corporations would rate neighborhoods and limit or refuse service to neighborhoods consisting of mostly people of color. This made loans more expensive and harder to acquire by individuals living in those neighborhoods. The pricing of properties would also be expensive, but when bought by a person of color, the value of properties would plummet drastically due to the predominantly colored demographics of the neighborhood.</p>
+    <h3>  Redlining in today's world </h3>
+    <p> Although redlining became illegal in 1977, it is still a problem in the Bay Area. Especially with relations to current events, the ramifications are severe due to COVID-19. Abolishing redlining was a step in the right direction, but the damage didn't disappear. Neighborhoods of color are still considered expendable and unimportant in the eyes of some large corporations and the government. According to a report on how SF became so segregated by SFGATE, large parts of redlined communities in San Francisco suffer from dense air pollution caused by highways and factories. In those communities, it is easier to breathe with your nose covered than it is to take a deep breath due to all the pollution stemming from the previous redlining. Leading to undesired health conditions in these neighborhoods, most residents can’t afford or don’t have access to healthcare due to immigration, cost, and past redlining. Although redlining was outlawed, health care was not made readily available. Now due to COVID-19, these neighborhoods are hit hardest without healthcare, being financially unstable, and being almost overpopulated.
+			 Most residents have multiple roommates and families living in one small apartment, which is a breeding group for the coronavirus, as they are not able to afford to live on their own. Unfortunately, redlining indirectly led the coronavirus to the death of many lives.
+			  It is our job to spread awareness of past mistakes and come together to resolve them.
+				 Everyone deserves to be treated and given equal opportunity.</p>
+				 <div class="gap">
+				 <img class="map" src="info.png">
+				 <p>Map of redlined and gentrified parts of San Francisco. There are companies that label communities in red to avoid and limit their services to those communities. Areas are also marked for gentrification or to build factories and highways (all in redlined areas).</p>
+				 </div>
+		<h2> Gender Equality in CS </h2>
+    <p> As the tech industry continues to grow, underrepresented groups in CS are another increasing concern. Women are one of the minority groups in computer science (CS) education and the technology industry. According to Girls Who Code, a nonprofit working to close the gender gap in computer science, 37% of computer scientists were women in 1955, while women only make up 24% of computer scientists today. Why are the numbers dropping?</p>
+    <p> Factors could include a lack of exposure and social representations of women in CS, especially in students' teenage years. In terms of media representation, there are only small proportions of minorities, especially females and Hispanics, shown doing CS. According to a CS diversity gaps report by Google and Gallup in 2016, about a quarter of students say they “often” see people “doing CS” on television and only about one in six (16%) among them report “often” seeing people like themselves. The report explains that even with equal access to CS learning opportunities in schools, female students are less likely than male students who have learned CS to say they learned it online (31% vs. 44%) or by themselves outside of a class or program (41% vs. 54%). Additionally, female students are also less interested (16% vs. 34%) and less confident they could learn CS (48% vs. 65%). Parents are more likely (than teachers) to say a lack of interest is the reason for minorities to be less likely to work in CS fields. Male students have higher rates of being told by adults they would be good at CS. All these elements could be contributing to the low numbers of female students learning and pursuing CS education.</p>
+    <p> Another challenge to diversity is the toxic work environment found within tech companies. According to data from the National Center for Women & Information Technology (NCWIT), women form 47% of all employed adults in the U.S., but only hold 25% of computing roles as of 2015. Of that 25%, Asian women make up just 5% of that number, while black and Hispanic women only comprise 3% and 1%, respectively. Additionally, females working in tech have reported higher rates of sexual harassment due to gender and power.</p>
+    <p> Educators suggest increasing female exposure and access to CS can drive greater minority involvement. In an effort to close the gender gap, many organizations are created to teach computing skills and provide mentorship to women. Google has several initiatives such as events and scholarships throughout the year aimed at hiring and educating more women programmers. The Code With Google program is working to expand computational training by investing in nonprofits and offering easy access to computer science education to everyone.</p>
+    <p> Female employees in Google are also taking actions to promote and support the next generation of female engineers through panels, mentorship, and more. According to Google Vice President Megan Smith, young women are heavily interested in creating an impact. She explains that connecting the dots of coding and impact is important for upping the number of female engineers. Learn more about Google's social impact and how Google addresses inequities through nonprofits on their website google.org.</p>
+   </body>
 </html>
